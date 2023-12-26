@@ -31,7 +31,8 @@ Promise.all([
   ].forEach((row) => {
     tableString += `${row.name}: ${row.info}\n`;
   });
-
+  console.log(tableString);
+  
   const filePath = "./build/system_info.txt";
   const directory = path.dirname(filePath);
 
